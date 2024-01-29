@@ -1,3 +1,4 @@
+--customer model
 with markup as (
     select *,
     first_value(customer_id) over(partition by company_name, contact_name order by company_name
